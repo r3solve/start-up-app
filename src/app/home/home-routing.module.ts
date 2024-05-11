@@ -6,7 +6,26 @@ const routes: Routes = [
   {
     path: '',
     component: HomePage,
-  }
+    children: [
+      {
+            path: 'explore',
+            loadChildren: () => import('./explore/explore.module').then( m => m.ExplorePageModule)
+          },
+          {
+            path: 'session',
+            loadChildren: () => import('./session/session.module').then( m => m.SessionPageModule)
+          },
+          {
+            path: 'profile',
+            loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
+          },
+          {
+            path: 'journal',
+            loadChildren: () => import('./journal/journal.module').then( m => m.JournalPageModule)
+          }
+      ]
+  },
+  
 ];
 
 @NgModule({
