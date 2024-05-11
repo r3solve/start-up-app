@@ -1,0 +1,45 @@
+//body-color: #c0b9a7;
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+ion-content {
+	ion-grid {
+		ion-row {
+			ion-col {
+				.cont {
+					margin-top:60px;
+				}
+				.image{
+					height: 200px;
+					border-radius: 50%;
+				}
+				.title {
+					font-family: "Poetsen One", sans-serif;
+					font-weight: bolder;
+					font-size:2rem;
+					color:#3e584a;
+					
+				}
+			}
+		}
+	}
+	.lower-bar {
+		height: 30vh;
+		width: 100%;
+	background-color: #3e584a;
+	position: absolute;
+	left: 0;
+	bottom: 0; /* Change top to bottom */
+	transform: translateY(10%); /* Adjust translateY value */
+	border-top-right-radius: 50px;
+	border-top-left-radius: 50px;
+
+	.btn {
+		width: 80%;
+		padding: 10px;
+		// img {
+		// 	width: 20px;
+		// 	height: 20px;
+		// }
+	}
+
+	}
+}

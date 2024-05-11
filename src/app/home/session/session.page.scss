@@ -1,0 +1,22 @@
+ion-card.ion-rounded {
+  border-radius: 15px; /* Adjust the value to control the roundness */
+}
+
+ion-card {
+  h1 {
+    font-weight: bold;
+  }
+  background-color:#a1b3a4;
+  color:black;
+  
+}
+
+.swiper-cards {
+  ion-card {
+    img {
+      height: 180px;
+      width: 100%;
+    }
+    height: 350px;
+  }
+}

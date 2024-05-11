@@ -1,0 +1,45 @@
+
+<ion-content [fullscreen]="true">
+  <ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Settings</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">This is the menu content.</ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Talk to Krista</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+  <ion-grid class="ion-text-center">
+    <ion-row>
+      <ion-col offset='2'>
+        <ion-thumbnail>
+          <img alt="Krista" src="assets/joy.svg" />
+        </ion-thumbnail>
+      </ion-col>
+    </ion-row>
+      <h2>
+          How are you feeling ?
+        </h2>
+        <h2>Do you want to talk about it ?</h2>
+      </ion-grid> 
+      </ion-content>
+    </div>
+
+</ion-content>
+
+ 
+
+<ion-fab slot="fixed" vertical="bottom" horizontal="end" >
+<ion-fab-button >
+  <ion-icon name="chatbubble-outline"></ion-icon>
+</ion-fab-button>
+</ion-fab>
