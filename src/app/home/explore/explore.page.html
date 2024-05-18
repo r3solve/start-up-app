@@ -20,7 +20,7 @@
   <ion-content class="ion-padding">
   <ion-grid class="ion-text-center">
     <ion-row>
-      <ion-col offset='2'>
+      <ion-col offset-lg='5' offset='2'>
         <ion-thumbnail>
           <img alt="Krista" src="assets/joy.svg" />
         </ion-thumbnail>
@@ -31,8 +31,14 @@
         </h2>
         <h2>Do you want to talk about it ?</h2>
       </ion-grid> 
+        <swiper-container [slidesPerView]="3" [loop]="true">
+          <swiper-slide>Slide 1</swiper-slide>
+          <swiper-slide>Slide 2</swiper-slide>
+          <swiper-slide>Slide 3</swiper-slide>
+      </swiper-container>       
       </ion-content>
     </div>
+
 
 </ion-content>
 
@@ -40,6 +46,6 @@
 
 <ion-fab slot="fixed" vertical="bottom" horizontal="end" >
 <ion-fab-button >
-  <ion-icon name="chatbubble-outline"></ion-icon>
+  <ion-icon [routerLink]="['/','new-journal']" name="chatbubble-outline"></ion-icon>
 </ion-fab-button>
 </ion-fab>

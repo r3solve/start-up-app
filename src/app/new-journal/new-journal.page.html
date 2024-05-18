@@ -1,30 +1,146 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-nav [root]="component">
-        <ion-button [routerLink]="['/home', 'journal']" fill="clear">
-          Back
-          <ion-icon slot="icon-only" name="caret-back"></ion-icon>
-        </ion-button>
-    </ion-nav>
-    <ion-title>New Journal</ion-title>
+    <ion-button [routerLink]="['/home', 'explore']" fill="clear">
+      <ion-icon name="chevron-back-outline" ></ion-icon>
+      Back
+    </ion-button>
+    <ion-title>
+      Talk to Krista
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <h3 class="ion-padding">Journal Pad</h3>
-  <form>
 
-    <ion-item>
-      <ion-label position="floating">Title</ion-label>
-      <ion-input style="font-size:1.3rem" type="text" ></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label position="floating">Content</ion-label>
-      <ion-textarea rows="20" ></ion-textarea>
-    </ion-item>
-    <div  class="ion-padding ion-margin-top">
-      <ion-button type="submit" expand="block">Add Journal Entry</ion-button>
+<ion-content [fullscreen]="true" color="light">
+  <div class="chat-container ion-padzz">
+    <div class="chat-message">
+      <div class="message">Welcome to the Chatbot!</div>
     </div>
+    <div class="chat-message">
+      <div class="message">How can I assist you today?</div>
+    </div>
+    <div class="chat-message">
+      <div class="message">Welcome to the Chatbot!</div>
+    </div>
+    <div class="chat-message">
+      <div class="message">How can I assist you today?</div>
+    </div>
+    <div class="chat-message">
+      <div class="message">Welcome to the Chatbot!</div>
+    </div>
+    <div class="chat-message">
+      <div class="message">How can I assist you today?</div>
+    </div>
+    <div class="chat-message">
+      <div class="message">Welcome to the Chatbot!</div>
+    </div>
+    <div class="chat-message">
+      <div class="message">How can I assist you today?</div>
+    </div>
+    <div class="chat-message">
+      <div class="message">Welcome to the Chatbot!</div>
+    </div>
+    <div class="chat-message">
+      <div class="message">How can I assist you today?</div>
+    </div>
+    <div class="chat-message">
+      <div class="message">Welcome to the Chatbot!</div>
+    </div>
+    <div class="chat-message">
+      <div class="message">How can I assist you today?</div>
+    </div>
+    <div class="chat-message">
+      <div class="message">Welcome to the Chatbot!</div>
+    </div>
+    <div class="chat-message">
+      <div class="message">How can I assist you today?</div>
+    </div>
+    <div class="chat-message">
+      <div class="message">Welcome to the Chatbot!</div>
+    </div>
+    <div class="chat-message">
+      <div class="message">How can I assist you today?</div>
+    </div>
+    <div class="chat-message">
+      <div class="message">Welcome to the Chatbot!</div>
+    </div>
+    <div class="chat-message">
+      <div class="message">How can I assist you today?</div>
+    </div>
+    <div class="chat-message">
+      <div class="message">Welcome to the Chatbot!</div>
+    </div>
+    <div class="chat-message">
+      <div class="message">How can I assist you today?</div>
+    </div>
+    <div class="chat-message">
+      <div class="message">Welcome to the Chatbot!</div>
+    </div>
+    <div class="chat-message">
+      <div class="message">How can I assist you today?</div>
+    </div>
+    <div class="chat-message">
+      <div class="message">Welcome to the Chatbot!</div>
+    </div>
+    <div class="chat-message">
+      <div class="message">How can I assist you today?</div>
+    </div>
+    <div class="chat-message">
+      <div class="message">Welcome to the Chatbot!</div>
+    </div>
+    <div class="chat-message">
+      <div class="message">How can I assist you today?</div>
+    </div>
+    <div class="chat-message">
+      <div class="message">Welcome to the Chatbot!</div>
+    </div>
+    <div class="chat-message">
+      <div class="message">How can I assist you today?</div>
+    </div>
+    <div class="chat-message">
+      <div class="message">Welcome to the Chatbot!</div>
+    </div>
+    <div class="chat-message">
+      <div class="message">How can I assist you today?</div>
+    </div>
+    <div class="chat-message">
+      <div class="message">Welcome to the Chatbot!</div>
+    </div>
+    <div class="chat-message">
+      <div class="message">How can I assist you today?</div>
+    </div>
+      <div class="ion-padding">
+        <!-- <h3 style="padding-left:15px">Follow Ups ?</h3> -->
+        <ion-list lines="inset">
+          <ion-item [button]='true'>
+            <ion-label>How to make nasa </ion-label>
+          </ion-item>
+          <ion-item [button]='true'>
+            <ion-label>Mega Man X</ion-label>
+          </ion-item>
+          <ion-item [button]='true'>
+            <ion-label>The Legend of Zelda</ion-label>
+          </ion-item>
+        </ion-list>
+      </div>
+
+    <!-- Previous chat messages will be displayed here -->
+  </div>
+
+  <form class="chat-input">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="10">
+          <ion-item>
+            <ion-textarea style="font-size:0.8rem; border:1px solid black;border-radius: 10px; padding:0px 10px;" type="text" placeholder="How may I help you ?..."></ion-textarea>
+          </ion-item>
+        </ion-col>
+        <ion-col size="2">
+          <ion-button [disabled]="false" type="submit" fill="clear" expand="block">
+            <ion-icon slot="end" name="send"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </form>
 </ion-content>
-
